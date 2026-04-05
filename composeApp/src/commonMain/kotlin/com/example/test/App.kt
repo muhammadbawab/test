@@ -11,13 +11,13 @@ import androidx.compose.material.icons.filled.MoreHoriz
 import androidx.compose.material.icons.filled.Person
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.lightColorScheme
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -33,7 +33,7 @@ import androidx.compose.ui.unit.sp
 // App Color Palette
 // ─────────────────────────────────────────────────────────────────────────────
 
-val AppBackground   = Color(0xFFFAF6EE)
+val AppBackground   = Color.White
 val AppOrange       = Color(0xFFE07B39)
 val AppGreen        = Color(0xFF2A7A3B)
 val AppText         = Color(0xFF1C1C1C)
@@ -110,7 +110,7 @@ fun MainScreen() {
                             selectedTextColor   = AppOrange,
                             unselectedIconColor = AppSubText,
                             unselectedTextColor = AppSubText,
-                            indicatorColor      = AppOrange.copy(alpha = 0.12f)
+                            indicatorColor      = Color.Transparent  // no bubble
                         )
                     )
                 }
